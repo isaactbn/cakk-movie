@@ -1,0 +1,6 @@
+framework module Pods_Cakk_Movies_Cakk_MoviesUITests {
+  umbrella header "Pods-Cakk Movies-Cakk MoviesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
