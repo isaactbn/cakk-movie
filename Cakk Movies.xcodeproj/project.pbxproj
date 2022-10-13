@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A68352028F882E000E737CE /* MovieRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A68351F28F882E000E737CE /* MovieRouter.swift */; };
+		6AD1967328F72B700014A3C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1967228F72B700014A3C1 /* AppDelegate.swift */; };
+		6AD1967528F72B700014A3C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1967428F72B700014A3C1 /* SceneDelegate.swift */; };
+		6AD1967C28F72B720014A3C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD1967B28F72B720014A3C1 /* Assets.xcassets */; };
+		6AD1967F28F72B720014A3C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD1967D28F72B720014A3C1 /* LaunchScreen.storyboard */; };
+		6AD1968A28F72B730014A3C1 /* Cakk_MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1968928F72B730014A3C1 /* Cakk_MoviesTests.swift */; };
+		6AD1969428F72B730014A3C1 /* Cakk_MoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1969328F72B730014A3C1 /* Cakk_MoviesUITests.swift */; };
+		6AD1969628F72B730014A3C1 /* Cakk_MoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1969528F72B730014A3C1 /* Cakk_MoviesUITestsLaunchTests.swift */; };
+		6AD196AA28F731DD0014A3C1 /* GenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD196A828F731DD0014A3C1 /* GenreViewController.swift */; };
+		6AD196AB28F731DD0014A3C1 /* GenreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD196A928F731DD0014A3C1 /* GenreViewController.xib */; };
+		6AD196AD28F732040014A3C1 /* GenreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD196AC28F732040014A3C1 /* GenreInteractor.swift */; };
+		6AD196AF28F7322D0014A3C1 /* GenrePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD196AE28F7322D0014A3C1 /* GenrePresenter.swift */; };
+		6AD196B128F7324D0014A3C1 /* GenreEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD196B028F7324D0014A3C1 /* GenreEntity.swift */; };
+		6AD196B328F7325C0014A3C1 /* GenreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD196B228F7325C0014A3C1 /* GenreRouter.swift */; };
+		6AD196BC28F747FF0014A3C1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD196BA28F747FE0014A3C1 /* CollectionViewCell.swift */; };
+		6AD196BD28F747FF0014A3C1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD196BB28F747FE0014A3C1 /* CollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AD1968628F72B730014A3C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AD1966728F72B6F0014A3C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AD1966E28F72B700014A3C1;
+			remoteInfo = "Cakk Movies";
+		};
+		6AD1969028F72B730014A3C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AD1966728F72B6F0014A3C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AD1966E28F72B700014A3C1;
+			remoteInfo = "Cakk Movies";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A68351F28F882E000E737CE /* MovieRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRouter.swift; sourceTree = "<group>"; };
+		6AD1966F28F72B700014A3C1 /* Cakk Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cakk Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AD1967228F72B700014A3C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6AD1967428F72B700014A3C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6AD1967B28F72B720014A3C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AD1967E28F72B720014A3C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AD1968028F72B720014A3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AD1968528F72B730014A3C1 /* Cakk MoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cakk MoviesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AD1968928F72B730014A3C1 /* Cakk_MoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cakk_MoviesTests.swift; sourceTree = "<group>"; };
+		6AD1968F28F72B730014A3C1 /* Cakk MoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cakk MoviesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AD1969328F72B730014A3C1 /* Cakk_MoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cakk_MoviesUITests.swift; sourceTree = "<group>"; };
+		6AD1969528F72B730014A3C1 /* Cakk_MoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cakk_MoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6AD196A828F731DD0014A3C1 /* GenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewController.swift; sourceTree = "<group>"; };
+		6AD196A928F731DD0014A3C1 /* GenreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreViewController.xib; sourceTree = "<group>"; };
+		6AD196AC28F732040014A3C1 /* GenreInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreInteractor.swift; sourceTree = "<group>"; };
+		6AD196AE28F7322D0014A3C1 /* GenrePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePresenter.swift; sourceTree = "<group>"; };
+		6AD196B028F7324D0014A3C1 /* GenreEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreEntity.swift; sourceTree = "<group>"; };
+		6AD196B228F7325C0014A3C1 /* GenreRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreRouter.swift; sourceTree = "<group>"; };
+		6AD196BA28F747FE0014A3C1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		6AD196BB28F747FE0014A3C1 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AD1966C28F72B700014A3C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD1968228F72B730014A3C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD1968C28F72B730014A3C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A68351628F8821100E737CE /* Movie List Module */ = {
+			isa = PBXGroup;
+			children = (
+				6A68351B28F8826200E737CE /* View */,
+				6A68351A28F8825A00E737CE /* Interactor */,
+				6A68351928F8824F00E737CE /* Presenter */,
+				6A68351828F8824200E737CE /* Entity */,
+				6A68351728F8823B00E737CE /* Router */,
+			);
+			path = "Movie List Module";
+			sourceTree = "<group>";
+		};
+		6A68351728F8823B00E737CE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6A68351F28F882E000E737CE /* MovieRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6A68351828F8824200E737CE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		6A68351928F8824F00E737CE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6A68351A28F8825A00E737CE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6A68351B28F8826200E737CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6AD1966628F72B6F0014A3C1 = {
+			isa = PBXGroup;
+			children = (
+				6AD1967128F72B700014A3C1 /* Cakk Movies */,
+				6AD1968828F72B730014A3C1 /* Cakk MoviesTests */,
+				6AD1969228F72B730014A3C1 /* Cakk MoviesUITests */,
+				6AD1967028F72B700014A3C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AD1967028F72B700014A3C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AD1966F28F72B700014A3C1 /* Cakk Movies.app */,
+				6AD1968528F72B730014A3C1 /* Cakk MoviesTests.xctest */,
+				6AD1968F28F72B730014A3C1 /* Cakk MoviesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AD1967128F72B700014A3C1 /* Cakk Movies */ = {
+			isa = PBXGroup;
+			children = (
+				6AD196A228F72EAB0014A3C1 /* Module */,
+				6AD1967228F72B700014A3C1 /* AppDelegate.swift */,
+				6AD1967428F72B700014A3C1 /* SceneDelegate.swift */,
+				6AD1967B28F72B720014A3C1 /* Assets.xcassets */,
+				6AD1967D28F72B720014A3C1 /* LaunchScreen.storyboard */,
+				6AD1968028F72B720014A3C1 /* Info.plist */,
+			);
+			path = "Cakk Movies";
+			sourceTree = "<group>";
+		};
+		6AD1968828F72B730014A3C1 /* Cakk MoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AD1968928F72B730014A3C1 /* Cakk_MoviesTests.swift */,
+			);
+			path = "Cakk MoviesTests";
+			sourceTree = "<group>";
+		};
+		6AD1969228F72B730014A3C1 /* Cakk MoviesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6AD1969328F72B730014A3C1 /* Cakk_MoviesUITests.swift */,
+				6AD1969528F72B730014A3C1 /* Cakk_MoviesUITestsLaunchTests.swift */,
+			);
+			path = "Cakk MoviesUITests";
+			sourceTree = "<group>";
+		};
+		6AD196A228F72EAB0014A3C1 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				6A68351628F8821100E737CE /* Movie List Module */,
+				6AD196A328F72EB50014A3C1 /* Official Genre Module */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		6AD196A328F72EB50014A3C1 /* Official Genre Module */ = {
+			isa = PBXGroup;
+			children = (
+				6AD196B428F732660014A3C1 /* View */,
+				6AD196B528F7327A0014A3C1 /* Interactor */,
+				6AD196B628F732940014A3C1 /* Presenter */,
+				6AD196B728F732A40014A3C1 /* Entity */,
+				6AD196B828F732B60014A3C1 /* Router */,
+			);
+			path = "Official Genre Module";
+			sourceTree = "<group>";
+		};
+		6AD196B428F732660014A3C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6AD196B928F747E50014A3C1 /* Cell */,
+				6AD196A828F731DD0014A3C1 /* GenreViewController.swift */,
+				6AD196A928F731DD0014A3C1 /* GenreViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6AD196B528F7327A0014A3C1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6AD196AC28F732040014A3C1 /* GenreInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6AD196B628F732940014A3C1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6AD196AE28F7322D0014A3C1 /* GenrePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6AD196B728F732A40014A3C1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				6AD196B028F7324D0014A3C1 /* GenreEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		6AD196B828F732B60014A3C1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6AD196B228F7325C0014A3C1 /* GenreRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6AD196B928F747E50014A3C1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6AD196BA28F747FE0014A3C1 /* CollectionViewCell.swift */,
+				6AD196BB28F747FE0014A3C1 /* CollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AD1966E28F72B700014A3C1 /* Cakk Movies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AD1969928F72B730014A3C1 /* Build configuration list for PBXNativeTarget "Cakk Movies" */;
+			buildPhases = (
+				6AD1966B28F72B700014A3C1 /* Sources */,
+				6AD1966C28F72B700014A3C1 /* Frameworks */,
+				6AD1966D28F72B700014A3C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cakk Movies";
+			productName = "Cakk Movies";
+			productReference = 6AD1966F28F72B700014A3C1 /* Cakk Movies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AD1968428F72B730014A3C1 /* Cakk MoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AD1969C28F72B730014A3C1 /* Build configuration list for PBXNativeTarget "Cakk MoviesTests" */;
+			buildPhases = (
+				6AD1968128F72B730014A3C1 /* Sources */,
+				6AD1968228F72B730014A3C1 /* Frameworks */,
+				6AD1968328F72B730014A3C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AD1968728F72B730014A3C1 /* PBXTargetDependency */,
+			);
+			name = "Cakk MoviesTests";
+			productName = "Cakk MoviesTests";
+			productReference = 6AD1968528F72B730014A3C1 /* Cakk MoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6AD1968E28F72B730014A3C1 /* Cakk MoviesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AD1969F28F72B730014A3C1 /* Build configuration list for PBXNativeTarget "Cakk MoviesUITests" */;
+			buildPhases = (
+				6AD1968B28F72B730014A3C1 /* Sources */,
+				6AD1968C28F72B730014A3C1 /* Frameworks */,
+				6AD1968D28F72B730014A3C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AD1969128F72B730014A3C1 /* PBXTargetDependency */,
+			);
+			name = "Cakk MoviesUITests";
+			productName = "Cakk MoviesUITests";
+			productReference = 6AD1968F28F72B730014A3C1 /* Cakk MoviesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AD1966728F72B6F0014A3C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					6AD1966E28F72B700014A3C1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					6AD1968428F72B730014A3C1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 6AD1966E28F72B700014A3C1;
+					};
+					6AD1968E28F72B730014A3C1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 6AD1966E28F72B700014A3C1;
+					};
+				};
+			};
+			buildConfigurationList = 6AD1966A28F72B700014A3C1 /* Build configuration list for PBXProject "Cakk Movies" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AD1966628F72B6F0014A3C1;
+			productRefGroup = 6AD1967028F72B700014A3C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AD1966E28F72B700014A3C1 /* Cakk Movies */,
+				6AD1968428F72B730014A3C1 /* Cakk MoviesTests */,
+				6AD1968E28F72B730014A3C1 /* Cakk MoviesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AD1966D28F72B700014A3C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD196AB28F731DD0014A3C1 /* GenreViewController.xib in Resources */,
+				6AD1967F28F72B720014A3C1 /* LaunchScreen.storyboard in Resources */,
+				6AD196BD28F747FF0014A3C1 /* CollectionViewCell.xib in Resources */,
+				6AD1967C28F72B720014A3C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD1968328F72B730014A3C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD1968D28F72B730014A3C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AD1966B28F72B700014A3C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD196AF28F7322D0014A3C1 /* GenrePresenter.swift in Sources */,
+				6AD196AA28F731DD0014A3C1 /* GenreViewController.swift in Sources */,
+				6AD196BC28F747FF0014A3C1 /* CollectionViewCell.swift in Sources */,
+				6AD196B128F7324D0014A3C1 /* GenreEntity.swift in Sources */,
+				6AD1967328F72B700014A3C1 /* AppDelegate.swift in Sources */,
+				6A68352028F882E000E737CE /* MovieRouter.swift in Sources */,
+				6AD1967528F72B700014A3C1 /* SceneDelegate.swift in Sources */,
+				6AD196B328F7325C0014A3C1 /* GenreRouter.swift in Sources */,
+				6AD196AD28F732040014A3C1 /* GenreInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD1968128F72B730014A3C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD1968A28F72B730014A3C1 /* Cakk_MoviesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD1968B28F72B730014A3C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD1969428F72B730014A3C1 /* Cakk_MoviesUITests.swift in Sources */,
+				6AD1969628F72B730014A3C1 /* Cakk_MoviesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AD1968728F72B730014A3C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AD1966E28F72B700014A3C1 /* Cakk Movies */;
+			targetProxy = 6AD1968628F72B730014A3C1 /* PBXContainerItemProxy */;
+		};
+		6AD1969128F72B730014A3C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AD1966E28F72B700014A3C1 /* Cakk Movies */;
+			targetProxy = 6AD1969028F72B730014A3C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6AD1967D28F72B720014A3C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AD1967E28F72B720014A3C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AD1969728F72B730014A3C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6AD1969828F72B730014A3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AD1969A28F72B730014A3C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cakk Movies/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cakk-native-app.Cakk-Movies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AD1969B28F72B730014A3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cakk Movies/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cakk-native-app.Cakk-Movies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6AD1969D28F72B730014A3C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cakk-native-app.Cakk-MoviesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cakk Movies.app/Cakk Movies";
+			};
+			name = Debug;
+		};
+		6AD1969E28F72B730014A3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cakk-native-app.Cakk-MoviesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cakk Movies.app/Cakk Movies";
+			};
+			name = Release;
+		};
+		6AD196A028F72B730014A3C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cakk-native-app.Cakk-MoviesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cakk Movies";
+			};
+			name = Debug;
+		};
+		6AD196A128F72B730014A3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cakk-native-app.Cakk-MoviesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cakk Movies";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AD1966A28F72B700014A3C1 /* Build configuration list for PBXProject "Cakk Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AD1969728F72B730014A3C1 /* Debug */,
+				6AD1969828F72B730014A3C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AD1969928F72B730014A3C1 /* Build configuration list for PBXNativeTarget "Cakk Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AD1969A28F72B730014A3C1 /* Debug */,
+				6AD1969B28F72B730014A3C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AD1969C28F72B730014A3C1 /* Build configuration list for PBXNativeTarget "Cakk MoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AD1969D28F72B730014A3C1 /* Debug */,
+				6AD1969E28F72B730014A3C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AD1969F28F72B730014A3C1 /* Build configuration list for PBXNativeTarget "Cakk MoviesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AD196A028F72B730014A3C1 /* Debug */,
+				6AD196A128F72B730014A3C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AD1966728F72B6F0014A3C1 /* Project object */;
+}
