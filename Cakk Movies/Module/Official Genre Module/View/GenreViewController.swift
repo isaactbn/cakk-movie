@@ -7,23 +7,33 @@
 
 import UIKit
 
-protocol GenreView {
+protocol GenreView: BaseView {
     var presenter: GenrePresenter? { get set }
     
-    func update(with genres: [GenreBodyResponse])
+    func update(with genres: [GenreBodyFullResponse])
     func update(with error: String)
 }
 
-class GenreViewController: UIViewController, GenreView {
+class GenreViewController: BaseVC, GenreView {
     
     @IBOutlet weak var genreCollectionView: UICollectionView!
     
+    var genres: [GenreBodyFullResponse]? = []
+    
     var presenter: GenrePresenter?
-    var listData = ["Drama", "Comedy", "Horror", "Action", "Animation", "Documenter", "Fantasy", "Science Fiction (Sci-Fi)", "Thriller", "Musical"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollection()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.hideNavigationBar()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.showNavigationBar()
     }
     
     private func setupCollection() {
@@ -32,18 +42,21 @@ class GenreViewController: UIViewController, GenreView {
         genreCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionViewCell")
     }
     
-    func update(with genres: [GenreBodyResponse]) {
-        
+    func update(with genres: [GenreBodyFullResponse]) {
+        DispatchQueue.main.async {
+            self.genres = genres
+            self.genreCollectionView.reloadData()
+        }
     }
     
     func update(with error: String) {
-        
+        print(error)
     }
 }
 
 extension GenreViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return listData.count
+        return genres?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -59,10 +72,16 @@ extension GenreViewController: UICollectionViewDelegate, UICollectionViewDataSou
             return UICollectionViewCell()
         }
         
-        cell.titleLabel.text = listData[indexPath.row]
+        cell.titleLabel.text = genres?[indexPath.row].name
+        
+        cell.viewWrapper.tapGesture{ [self] in
+            let id = genres?[indexPath.row].id.codingKey.stringValue ?? ""
+            let movieRouter = MovieRouters.start(id: id, navTitle: genres?[indexPath.row].name ?? "")
+            let vc = movieRouter.entry
+            
+            pushVC(vc as? MovieViewVC ?? BaseVC())
+        }
         
         return cell
     }
-    
-    
 }

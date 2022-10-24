@@ -17,6 +17,12 @@ class GenreInteractors: GenreInteractor {
     var presenter: GenrePresenter?
     
     func getGenreList() {
+        let repo = CARequestService<GenreBodyResponse>()
         
+        repo.request(api: "/genre/movie/list", path: "", onSuccess: { (response) in
+            self.presenter?.onGetGenreList(with: .success(response))
+        }) { (error) in
+            self.presenter?.onGetGenreList(with: .failure(error))
+        }
     }
 }

@@ -8,5 +8,10 @@
 import Foundation
 
 struct GenreBodyResponse: Codable {
+    let genres: [GenreBodyFullResponse]?
+}
+
+struct GenreBodyFullResponse: Codable {
+    let id: Int
     let name: String
 }

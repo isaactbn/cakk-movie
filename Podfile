@@ -6,6 +6,10 @@ target 'Cakk Movies' do
   use_frameworks!
 
   # Pods for Cakk Movies
+  pod 'IQKeyboardManagerSwift', '6.3.0'
+  pod 'ProgressHUD'
+  pod 'Kingfisher', '5.14.0'
+  pod 'STPopup'
 
   target 'Cakk MoviesTests' do
     inherit! :search_paths

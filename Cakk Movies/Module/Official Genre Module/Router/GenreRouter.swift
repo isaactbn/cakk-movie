@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-typealias EntryPoint = GenreView & UIViewController
+typealias EntryPoint = GenreView & BaseVC
 
 protocol GenreRouter {
     var entry: EntryPoint? { get }
@@ -27,6 +27,7 @@ class GenreRouters: GenreRouter {
         var presenter: GenrePresenter = GenrePresentation()
         var interactor: GenreInteractor = GenreInteractors()
         
+        view.onLoading()
         view.presenter = presenter
         
         interactor.presenter = presenter

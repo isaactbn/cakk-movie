@@ -1,17 +1,18 @@
 //
-//  CollectionViewCell.swift
+//  MovieCell.swift
 //  Cakk Movies
 //
-//  Created by Isaac on 10/13/22.
+//  Created by Isaac on 10/19/22.
 //
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
-
+class MovieCell: UICollectionViewCell {
+    
     @IBOutlet weak var viewWrapper: UIView!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

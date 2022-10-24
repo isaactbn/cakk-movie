@@ -20,9 +20,6 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yg-eA-BAS">
                         <rect key="frame" x="8" y="16" width="189" height="173"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-default" translatesAutoresizingMaskIntoConstraints="NO" id="k4q-A4-5M7">
-                                <rect key="frame" x="0.0" y="0.0" width="189" height="173"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDo-6t-g7m">
                                 <rect key="frame" x="16" y="76" width="157" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
@@ -32,14 +29,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="k4q-A4-5M7" secondAttribute="bottom" id="2eW-60-OSW"/>
                             <constraint firstAttribute="trailing" secondItem="kDo-6t-g7m" secondAttribute="trailing" constant="16" id="9Fg-C3-Lbg"/>
-                            <constraint firstAttribute="trailing" secondItem="k4q-A4-5M7" secondAttribute="trailing" id="By3-Um-dmi"/>
                             <constraint firstItem="kDo-6t-g7m" firstAttribute="leading" secondItem="1yg-eA-BAS" secondAttribute="leading" constant="16" id="VPF-T4-AWj"/>
-                            <constraint firstItem="k4q-A4-5M7" firstAttribute="leading" secondItem="1yg-eA-BAS" secondAttribute="leading" id="bmI-i5-Lw3"/>
                             <constraint firstItem="kDo-6t-g7m" firstAttribute="centerY" secondItem="1yg-eA-BAS" secondAttribute="centerY" id="vWo-E7-U2X"/>
-                            <constraint firstItem="k4q-A4-5M7" firstAttribute="top" secondItem="1yg-eA-BAS" secondAttribute="top" id="xPO-XJ-ygV"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>
@@ -52,7 +51,6 @@
             </constraints>
             <size key="customSize" width="296" height="298"/>
             <connections>
-                <outlet property="backgroundImage" destination="k4q-A4-5M7" id="S7W-fF-7dI"/>
                 <outlet property="titleLabel" destination="kDo-6t-g7m" id="FM5-X3-Loi"/>
                 <outlet property="viewWrapper" destination="1yg-eA-BAS" id="oL7-k0-eZY"/>
             </connections>
@@ -60,7 +58,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="img-default" width="360" height="360.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
